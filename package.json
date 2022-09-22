@@ -7,9 +7,11 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.3"
   },
   "scripts": {
@@ -39,7 +41,6 @@
   },
   "description": "Этот проект был создан при помощи [Create React App](https://github.com/facebook/create-react-app). Для знакомства и настройки дополнительных возможностей [обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ElfNevisokogoRosta/goit-react-hw-02-feedback.git"

@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import StatList from 'components/feedbackStat';
 import FeedbackBtn from 'components/feedbackKeys';
-
+import {
+  FeedbackSection,
+  FeedbackTitle,
+  StatTitle,
+  Discription,
+} from './feedback.styled';
 export default class Feedback extends Component {
   constructor() {
     super();
@@ -31,15 +36,15 @@ export default class Feedback extends Component {
   };
   render() {
     return (
-      <section>
-        <h1>Please leave feedback</h1>
+      <FeedbackSection>
+        <FeedbackTitle>Please leave feedback</FeedbackTitle>
         <FeedbackBtn value={'Good'} func={this.positiveFeedback} />
         <FeedbackBtn value={'Neutral'} func={this.neutralFeedback} />
         <FeedbackBtn value={'Bad'} func={this.badFeedback} />
-        <h2>Statistics</h2>
+        <StatTitle>Statistics</StatTitle>
 
         {this.total() === 0 ? (
-          'there is no feedback'
+          <Discription>There is no feedback</Discription>
         ) : (
           <StatList
             good={this.state.good}
@@ -49,7 +54,7 @@ export default class Feedback extends Component {
             percentageFunc={this.percentage()}
           />
         )}
-      </section>
+      </FeedbackSection>
     );
   }
 }
