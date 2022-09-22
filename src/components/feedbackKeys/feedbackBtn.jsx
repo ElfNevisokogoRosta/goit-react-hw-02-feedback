@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FeedbackBtnStyled } from './feednackBtn.styled';
+import PropTypes from 'prop-types';
 class FeedbackBtn extends Component {
   render() {
     return (
@@ -9,4 +10,8 @@ class FeedbackBtn extends Component {
     );
   }
 }
+FeedbackBtn.propTypes = {
+  func: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
+};
 export default FeedbackBtn;
